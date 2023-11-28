@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Chandru-Tic-Tac-Teo/static/css/main.69dabe55.css",
+    "main.js": "/Chandru-Tic-Tac-Teo/static/js/main.4b41132d.js",
+    "index.html": "/Chandru-Tic-Tac-Teo/index.html",
+    "main.69dabe55.css.map": "/Chandru-Tic-Tac-Teo/static/css/main.69dabe55.css.map",
+    "main.4b41132d.js.map": "/Chandru-Tic-Tac-Teo/static/js/main.4b41132d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69dabe55.css",
+    "static/js/main.4b41132d.js"
+  ]
+}
