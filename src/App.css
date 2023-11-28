@@ -1,0 +1,66 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.app{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(30, 34, 42);
+  display: flex;flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+
+}
+
+.row{
+  display: flex;
+}
+
+.cell{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: lightcoral;
+  margin: 3px;
+  border-radius: 10px;
+  user-select: none;
+}
+.cell-hov:hover{
+  cursor: pointer;
+}
+
+
+p{
+  color: rgb(69, 69, 69);
+}
+.clicked,h1{
+  color: rgb(221, 221, 221);
+  user-select: none;
+}
+
+span{
+  font-size: 27px;
+  color: lightcoral;
+}
+
+button{
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(212, 212, 212);
+}
+
+button:active{
+  background-color: lightblue;
+}
