@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/Chandru-Tic-Tac-Teo/static/css/main.69dabe55.css",
-    "main.js": "/Chandru-Tic-Tac-Teo/static/js/main.4b41132d.js",
+    "main.js": "/Chandru-Tic-Tac-Teo/static/js/main.a93ae07d.js",
+    "static/media/success.m4a": "/Chandru-Tic-Tac-Teo/static/media/success.1d88835ee2146b55a50f.m4a",
+    "static/media/ClickSound.m4a": "/Chandru-Tic-Tac-Teo/static/media/ClickSound.f7e8f889fedabc8d298c.m4a",
     "index.html": "/Chandru-Tic-Tac-Teo/index.html",
     "main.69dabe55.css.map": "/Chandru-Tic-Tac-Teo/static/css/main.69dabe55.css.map",
-    "main.4b41132d.js.map": "/Chandru-Tic-Tac-Teo/static/js/main.4b41132d.js.map"
+    "main.a93ae07d.js.map": "/Chandru-Tic-Tac-Teo/static/js/main.a93ae07d.js.map"
   },
   "entrypoints": [
     "static/css/main.69dabe55.css",
-    "static/js/main.4b41132d.js"
+    "static/js/main.a93ae07d.js"
   ]
 }
