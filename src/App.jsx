@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import { useRef } from "react";
+import clickSound from "./ClickSound.m4a";
+import success from "./success.m4a";
 
 function App() {
 
@@ -13,8 +15,11 @@ function App() {
     [7, 8, 9],
   ]);
 
+const audio_click = new Audio(clickSound);
+const audio_success = new Audio(success);
 
   function handler(r, c) {
+    audio_click.play();
     let temMat = [...matrix];
     temMat[r][c] = turn;
     setMatrix(temMat);
@@ -28,21 +33,27 @@ function App() {
       let j = 0;
       if ( matrix[i][j] === matrix[i][j + 1] && matrix[i][j + 1] === matrix[i][j + 2]) {
        console.log("same in row",);
-       setWinner(matrix[i][j])
+       setWinner(matrix[i][j]);
+       audio_success.play();
        return
       }
       if (matrix[j][i] === matrix[j + 1][i] &&matrix[j + 1][i] === matrix[j + 2][i]) {
         console.log("same in column");
         setWinner(matrix[j][i])
+        audio_success.play();
         return
       }
     }
     if ((matrix[0][0] === matrix[1][1] &&matrix[1][1] === matrix[2][2])||(matrix[0][2] === matrix[1][1] &&matrix[1][1] === matrix[2][0])) {
       console.log("same in cross");
       setWinner(matrix[1][1])
+      audio_success.play();
       return
     }
-    count.current === 9 && setWinner("daw")
+    if(count.current === 9) {
+      audio_success.play();
+      setWinner("daw")
+      }
   }
 
   function reset() {
